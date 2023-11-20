@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <script src="/static/js/funciones.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="header">
+            <h1>🎛️ Ejercicio 1</h1>
+        </div>
+
+        <div class="contenido">
+            <form method="post">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1" name="nota1" min="10" max="70" step="1" required><br><br>
+
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2" name="nota2" min="10" max="70" step="1" required><br><br>
+
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3" name="nota3" min="10" max="70" step="1" required><br><br>
+
+                <label for="asistencia">Asistencia(%):</label>
+                <input type="number" id="asistencia" name="asistencia" min="0" max="100" step="1" required><br><br>
+
+                <div style="width: 100%; display: flex;">
+                    <div style="width: 50%;">
+                        <button class="boton" type="submit" value="enviar" name="valor">✅ Enviar</button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="boton" type="button" onclick="volver()">🏠 Volver</button>
+                    </div>
+                </div>
+            </form>
+
+            {% if promedio %}
+            <div style="padding: 20px;">
+                {{promedio}}<br>
+                {{aprobado}}
+            </div>
+            {% endif %}
+
+        </div>
+
+        <div class="footer">
+            <p>Derechos Reservados &copy; 2023 | Juan Astorga</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <script src="/static/js/funciones.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="header">
+            <h1>🎛️ Ejercicio 2</h1>
+        </div>
+
+        <div class="contenido">
+            <form method="post">
+                <label for="nombre1">Nombre 1:</label>
+                <input type="text" id="nombre1" name="nombre1" required><br><br>
+
+                <label for="nombre2">Nombre 2:</label>
+                <input type="text" id="nombre2" name="nombre2" required><br><br>
+
+                <label for="nombre3">Nombre 3:</label>
+                <input type="text" id="nombre3" name="nombre3" required><br><br>
+
+                <div style="width: 100%; display: flex;">
+                    <div style="width: 50%">
+                        <button class="boton" type="submit" value="enviar" name="valor">✅ Enviar</button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="boton" type="button" onclick="volver()">🏠 Volver</button>
+                    </div>
+
+                </div>
+            </form>
+
+            {% if mayor %}
+            <div style="padding: 20px;">
+                El nombre con mayor cantidad de caracteres es: {{nombre}}<br>
+                El nombre tiene: {{mayor}} caracteres
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="footer">
+            <p>Derechos Reservados &copy; 2023 | Juan Astorga</p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    margin: 0ch;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 400px;
+    display: table;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80px;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenido {
+    width: 400px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    /* bottom       : 0; */
+    width: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+/* Estilo cuando el cursor pasa por encima del enlace */
+a:hover {
+    /* color: cadetblue; */
+    text-decoration: none;
+}
+
+
+.boton {
+    background-color: orange;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: darkorange;
+}
+
+
+.boton2 {
+    background-color: orange;
+    color: white;
+    padding: 5px 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton2:hover {
+    background-color: darkorange;
+}
